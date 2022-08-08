@@ -1,7 +1,7 @@
 /*
  * 1- Faça um programa que receba três inteiros e diga qual deles é o maior.
  */
-package PacoteJava;
+package lacosdedecisao;
 
 import java.util.Scanner;
 

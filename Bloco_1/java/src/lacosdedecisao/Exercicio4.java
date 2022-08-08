@@ -4,7 +4,7 @@ número é par ou ímpar. Se for par exiba também a raiz quadrada do mesmo; se 
 ímpar exiba o número elevado ao quadrado.
  */
 
-package PacoteJava;
+package lacosdedecisao;
 
 import java.util.Scanner;
 
@@ -22,7 +22,7 @@ public class Exercicio4 {
 			
 		if (n%2 == 1)
 		{
-			System.out.println(n+", é impar "+Math.pow(n, 2));
+			System.out.println(n+", é impar "+n+" X "+n+" = "+Math.pow(n, 2));
 		}
 		
 	

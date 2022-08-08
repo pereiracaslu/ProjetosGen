@@ -5,7 +5,7 @@ categoria ela se encontra:
  15-17 juvenil
  18-25 adulto */
 
-package PacoteJava;
+package lacosdedecisao;
 
 import java.util.Scanner;
 
