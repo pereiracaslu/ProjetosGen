@@ -13,18 +13,14 @@ programa
 				escreva("\nEntre com um número: ") // 7  6  33
 				leia(numeros[linha][coluna])
 				somaNumeros += numeros[linha][coluna]
-				se(coluna == 1)
-				{
-					somaColuna += numeros[linha][coluna]	
-					
-				}
+									
+				
 				se (linha==coluna)
 				{
 					somaDiag+= numeros[linha][coluna]
 				}
 			}
 		}
-		
 		
 		limpa()
 		escreva("\nSomatório dos números foi de: ",somaNumeros,"\n")
@@ -41,8 +37,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 556; 
- * @PONTOS-DE-PARADA = ;
+ * @POSICAO-CURSOR = 546; 
+ * @PONTOS-DE-PARADA = 6, 25, 26, 27, 13, 14;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;

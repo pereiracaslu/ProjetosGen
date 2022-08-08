@@ -7,7 +7,7 @@ programa
 	inteiro numFilhos, hab,fiTot=0, perc
 	real sal,salTotal=0.0, medSal=0.0, medFilhos=0.0, maiorSal=0.0, menorSal=0.0
 
-	para(hab=1;hab<=20; hab++)
+	para(hab=1;hab<=201; hab++)
 	{
 		
 		escreva("\nQual o salário do ",hab,"° habitante: ")
@@ -34,7 +34,7 @@ programa
 	escreva("\nA média de salario é de R$ ",mat.arredondar(medSal, 2), " a cada vinte habitantes.\n")
 	escreva("\nA média de filhos é de ",mat.arredondar(medFilhos, 2), " filhos a cada 20 habitantes.\n")
 	escreva("\nO maior salário é de R$ ",mat.arredondar(maiorSal, 2), ".\n")
-	escreva("\nPercentual de pessoas com menor salario abaixo de R$ 100,00 é de ",mat.arredondar(menorSal, 0)*5,"pessoas. \n")
+	escreva("\nPercentual de pessoas com menor salario abaixo de R$ 100,00 é de ",mat.arredondar(menorSal, 0)*5,"% pessoas. \n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -42,7 +42,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 224; 
+ * @POSICAO-CURSOR = 211; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
