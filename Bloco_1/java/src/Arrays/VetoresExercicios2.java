@@ -11,24 +11,38 @@ import java.util.Scanner;
 public class VetoresExercicios2 {
 
 		public static void main(String[] args){
-			int [] vetor = new int[6];
-			int [] vetorPar = new int [6];
-			int numero,somaPar=0,contImpar=0,i;
-			Scanner leia = new Scanner(System.in);
-		
-			for(i=0;i<6;i++) {
-					System.out.println("Digite um n√∫mero: ");
-					vetor[i] = leia.nextInt();
-			}
-					
-			for(i=0;i<6;i++);{
-				if (vetor[i] > 2) {
-					somaPar+=vetor[i];
-					System.out.println("N√∫meros pares digitados: "+vetor[i]);
-					System.out.println("Soma dos n√∫meros pares: "+somaPar);
-				}
 			
+			int [] array = new int [6];
+			int i, contPar=0, contImpar=0, p=1;
+			Scanner leia = new Scanner(System.in);
+			
+			for(i=0; i<array.length; i++) {
+				System.out.println("Entre com o n˙mero da "+(i+1)+" posiÁ„o: ");
+				array [i] = leia.nextInt();
+				}
+			for(i=0; i<array.length; i++) {
+				if(array [i] % 2 == 0) {
+					contPar++;
+				}
+				else {
+					contImpar++;
+				}
 			}
-		
+			System.out.println("Os n˙meros pares digitados s„o: ");
+				for(i=0; i<array.length; i++) {
+					if(array [i] % 2 == 0) {
+						System.out.print(array[i]+"  ");
+				}
+				
+				}
+			System.out.println("\nA quantidade de n˙meros pares digitados: "+contPar+"\n\n\n\n");
+			
+			System.out.println("Os n˙meros impares digitados s„o: ");
+				for(i=0;i<array.length;i++) {
+					if(array [i] % 2 != 0) {
+						System.out.print(array[i]+"  ");						
+					}
+				}
+			System.out.println("\nA quantidade de n˙meros impares digitados: "+contImpar);
+			}
 		}
-}
