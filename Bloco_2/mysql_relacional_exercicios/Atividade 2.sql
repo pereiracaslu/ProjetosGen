@@ -70,14 +70,17 @@ CREATE TABLE tb_pizzas(
     SELECT * FROM tb_pizzas WHERE sabor LIKE  "%M%";
 		
         
-	SELECT * FROM tb_pizzas INNER JOIN tb_categorias
-    ON tb_categorias.id = tb_pizzas.categoria_id;
+	SELECT tb_pizzas.massa, tb_pizzas.preco, tb_pizzas.sabor, tb_categorias.descricao FROM tb_pizzas INNER JOIN tb_categorias
+    ON tb_categorias.id = tb_pizzas.categoria_id Where tb_categorias.descricao = "Doce"
+    OR tb_categorias.descricao = "Salgada";
 	
-    SELECT * FROM tb_pizzas INNER JOIN tb_categorias
+    SELECT tb_pizzas.massa, tb_pizzas.preco, tb_pizzas.sabor, tb_categorias.descricao FROM tb_pizzas INNER JOIN tb_categorias
     ON tb_categorias.id = tb_pizzas.categoria_id;
     
     SELECT * FROM tb_pizzas INNER JOIN tb_categorias
     ON tb_categorias.descricao = "Salgada";
+    
+    SELECT * FROM tb_pizzas 
 	
     
     
